@@ -1,47 +1,131 @@
-/* General styles */
-body {
-    font-family: Arial, sans-serif;
+/* Global Styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #cacaca;
     color: #333;
+    line-height: 1.7;
+    padding: 0 1rem;
 }
 
-/* Header styles */
+/* Header Styles */
 header {
-    background-color: #4CAF50;
+    background-color: #5f9ea0; /* Updated background color */
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 2rem 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Main content styles */
+header h1 {
+    font-size: 3rem;
+    font-family: 'Papyrus', fantasy; /* Updated font */
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* Main Section Styles */
 main {
-    padding: 20px;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: #fff8dc; /* Updated background color */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Section styles */
-section {
-    margin: 20px 0;
-    padding: 15px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+main h2 {
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 1rem;
 }
 
-/* Heading styles */
-h2 {
-    color: #444;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-h3 {
+main p {
+    font-size: 1.1rem;
     color: #555;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
 }
 
-p {
-    line-height: 1.6;
-    margin: 10px 0;
+main section {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+main section h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 0.8rem;
+}
+
+main section p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+main section h4 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+main section a {
+    display: inline-block;
+    font-size: 1rem;
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 2px solid #2980b9;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+main section a:hover {
+    background-color: #2980b9;
+    color: white;
+    border-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 1.5rem;
+    }
+
+    main h2 {
+        font-size: 1.8rem;
+    }
+
+    main section h3 {
+        font-size: 1.3rem;
+    }
+
+    main section a {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
 }
