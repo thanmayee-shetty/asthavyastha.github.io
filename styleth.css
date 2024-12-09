@@ -1,0 +1,84 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #ffffff; /* Ghost White */
+    color: #333;
+    line-height: 1.7;
+    padding: 0 1rem;
+}
+
+/* Header Styles */
+header {
+    background-color: #c2c2e4; /* Dark Olive Green */
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    font-family: 'Papyrus', fantasy;
+    margin-bottom: 0.5rem;
+}
+
+/* Main Section Styles */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: #ADD8E6; 
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    font-size: 2rem;
+    color: #34495e; 
+    margin-bottom: 1rem;
+}
+
+main p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ADD8E6; 
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    main {
+        padding: 1.5rem;
+    }
+
+    main h2 {
+        font-size: 1.8rem;
+    }
+
+    main pre {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+}
