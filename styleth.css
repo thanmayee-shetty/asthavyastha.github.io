@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Georgia', serif;
-    background-color: #ffffff; /* Ghost White */
+    background-color: #ffffff; 
     color: #333;
     line-height: 1.7;
     padding: 0 1rem;
@@ -15,7 +15,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #c2c2e4; /* Dark Olive Green */
+    background-color: #c2c2e4; 
     color: white;
     text-align: center;
     padding: 2rem 1rem;
