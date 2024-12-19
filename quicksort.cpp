@@ -2,14 +2,6 @@
 #include<algorithm>
 using namespace std;
 
-// Function to swap two elements
-// void swap(int& a, int& b) {
-//     int t = a;
-//     a = b;
-//     b = t;
-// }
-
-// Partition function
 int Partition(int A[], int l, int r) {
     int p = A[l];
     int i = l;
