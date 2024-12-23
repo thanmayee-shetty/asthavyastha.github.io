@@ -33,7 +33,7 @@ void bfs(int m[10][10], int v, int source) {
 int main() {
     int v = 5;
     int m[10][10] = {{0,1,1,0,0}, {1,0,0,1,1},
-        {1,0,0,0,1}, {0,1,0,0,0}, {0,1,1,0,0}};
+        {1,0,0,0,1}, {0,1,0,0,0}, {0,1,1,0,0}}; //We can add the places manually or with the help of google sites
 
     int source;
     cout << "Enter the source vertex: ";
