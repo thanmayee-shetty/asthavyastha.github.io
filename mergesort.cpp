@@ -4,13 +4,15 @@
 #include <vector>
 #include <algorithm>
 #include <map>
+#include <cctype>
+#include <locale>
 using namespace std;
 
 struct Produce {
     string name;
     int quantity;
     bool operator<(const Produce &other) const {
-        return quantity > other.quantity;
+        return quantity > other.quantity;  // Sort in descending order of quantity
     }
 };
 
@@ -24,18 +26,30 @@ public:
         while (getline(file, line)) {
             stringstream ss(line);
             string farmerName;
-            ss >> farmerName;
+            getline(ss, farmerName, ':'); // Read the farmer name until ':'
+
+            farmerName = trim(farmerName);  // Trim any spaces around the name
 
             string produceName;
             int quantity;
             vector<Produce> produceList;
-            while (ss >> produceName) {
-                ss.ignore(1);
-                ss >> quantity;
-                ss.ignore(1);
 
-                Produce p = {produceName, quantity};
-                produceList.push_back(p);
+            // Process the produce data in the line
+            while (ss >> produceName) {
+                // Ignore the opening parenthesis '('
+                size_t startPos = produceName.find('(');
+                size_t endPos = produceName.find(')');
+                
+                // Extract produce name and quantity
+                if (startPos != string::npos && endPos != string::npos) {
+                    // Extract the produce name (before '(')
+                    string name = produceName.substr(0, startPos);
+                    // Extract the quantity (inside parentheses)
+                    int quantity = stoi(produceName.substr(startPos + 1, endPos - startPos - 1));
+                    
+                    Produce p = {name, quantity};
+                    produceList.push_back(p);
+                }
             }
 
             farmerData[farmerName] = produceList;
@@ -43,17 +57,32 @@ public:
     }
 
     void displaySortedProduce(const string &farmerName) {
-        if (farmerData.find(farmerName) != farmerData.end()) {
-            cout << "Farmer: " << farmerName << endl;
-            vector<Produce> produceList = farmerData[farmerName];
+        string searchName = farmerName;
+        searchName = trim(searchName);  // Trim spaces from input
+
+        if (farmerData.find(searchName) != farmerData.end()) {
+            cout << "Farmer: " << searchName << endl;
+            vector<Produce> produceList = farmerData[searchName];
+
+            // Sort produce based on quantity (highest to lowest)
             sort(produceList.begin(), produceList.end());
 
+            // Display sorted produce
             for (const auto &produce : produceList) {
                 cout << produce.name << " (" << produce.quantity << ")\n";
             }
         } else {
             cout << "Farmer not found!" << endl;
         }
+    }
+
+private:
+    string trim(const string &str) {
+        size_t first = str.find_first_not_of(" \t\n\r");
+        size_t last = str.find_last_not_of(" \t\n\r");
+        if (first == string::npos || last == string::npos)
+            return "";
+        return str.substr(first, (last - first + 1));
     }
 };
 
@@ -69,3 +98,5 @@ int main() {
 
     return 0;
 }
+
+
