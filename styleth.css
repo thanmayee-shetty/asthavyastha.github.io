@@ -52,52 +52,23 @@ main p {
     margin-bottom: 1.5rem;
 }
 
-main b {
-    font-weight: bold;
-    color: #333;
-}
-
-main a {
-    color: #007BFF;
+/* Button Styles for Links */
+main section a {
+    display: inline-block;
+    font-size: 1rem;
+    color: #638398;
     text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-main a:hover {
-    color: #0056b3;
-}
-
-/* Section Styles */
-section {
-    margin-bottom: 2rem;
-}
-
-section h2 {
-    font-size: 1.8rem;
-    color: #2c3e50;
-    margin-bottom: 1rem;
-}
-
-section p {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.7;
-    margin-bottom: 1.5rem;
-}
-
-section b {
     font-weight: bold;
-    color: #333;
+    padding: 0.5rem 1rem;
+    border: 2px solid #638398;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
 }
 
-section a {
-    color: #007BFF;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-section a:hover {
-    color: #0056b3;
+main section a:hover {
+    background-color: #638398;
+    color: white;
+    border-color: #638398;
 }
 
 /* Footer Styles */
