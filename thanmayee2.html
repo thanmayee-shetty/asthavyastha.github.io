@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmers' Produce Distribution - SDG Goal 12</title>
+</head>
+<body>
+    <header>
+        <h1>Farmers' Produce Distribution - SDG Goal 12</h1>
+    </header>
+    <main>
+        <section>
+            <h2>2. Farmers' Produce Distribution</h2>
+            <p>
+                <b>0.a. Goal (SDG_GOAL) Goal 12:</b> Ensure sustainable consumption and production patterns. <br> 
+                <b>0.b. Target (SDG_TARGET) Target 12.1:</b> Implement the 10‑Year Framework of Programmes on Sustainable Consumption and Production Patterns, all countries taking action, with developed countries taking the lead, taking into account the development and capabilities of developing countries. <br>
+                <b>0.c. Indicator (SDG_INDICATOR) Indicator 12.1.1:</b> Number of countries developing, adopting or implementing policy instruments aimed at supporting the shift to sustainable consumption and production. <br>
+                <br>
+                <b>Linked SDG’s:</b> 12.2.1/8.4.1, 12.2.2/8.4.2, 12.3.1, 12.5.1, 12.6.1, 12.8.1, 12.a.1, 12.b.1, 12.c.1, 13.2.1, 14.c.1, 14.6.1, 15.8.1 <br>
+                <br>
+                <b>2.a. Definitions and Concepts</b> <br>
+                Sustainable Consumption and Production: the working definition of Sustainable Consumption and Production (SCP) used in the context of this framework is: “The use of services and related products, which respond to basic needs and bring a better quality of life while minimising the use of natural resources and toxic materials as well as the emissions of waste and pollutants over the life cycle of the service or product so as not to jeopardise the needs of future generation.” 
+                <br><br>
+                Here I refer to the concept of value chain stages(not heavily discussed in the source but is still a crucial part of my discussion here) which basically covers the entire lifecycle of a product, from its origin (farm production) to its final use (consumer consumption) and eventual disposal or recycling. I will be taking over the transport, sorting and consumption of the produce and my teammate will further talk about the last few stages in her business case.
+                <br><br>
+                Distribution is a main factor in providing the consumer fresh products. It would be best if the farmers can directly interact with the consumers and sell their produce. Before that the farmers would need to know what to sell where i.e they should be selling based on particular factors. Some of the factors may be, <br>
+                1. What's the population of the city? <br>
+                2. What exactly are the retail stores asking for? <br>
+                3. Which one of their produce is going to perish first(rankings can be given to the produce and can be sorted based on that) <br>
+                4. How can they distribute it based on the needs of the people/stores? <br>
+                <br>
+                Of course there are many other questions but for now I will be focusing on 3 and 4 as they have the need for algorithms to solve them(the other 2 also need it but for now I will take only 3 and 4). 
+                <br><br>
+                For the third question I would provide a system where the farmer can enter the ranks of each one of his/her produce(1 being the least perishable and 10 being the most). After this I could provide a sorting algorithm to give the farmer an idea on how much of his produce he needs to sell immediately. This system would be able to help him keep track of his/her produce and give him/her warnings regarding when to sell them.
+                <br><br>
+                For the fourth question I would make a database containing information like population of that part of the city, what crop is sold the most, what is the average amount of produce the retail stores need etc. These are some of the main questions that will be answered by the database. Based on what produce the farmer wants to sell, it will provide the best route possible to the place that needs that particular produce. I can use one of dijkstra’s or kruskal’s algorithms to find the possibilities of all the shortest paths to make it easier for the farmer to choose between one of them. The first part of the problem can be solved by a simple searching algorithm(possibly a graph search). 
+                <br>Here is a code for dijkstra's algorithm I talked about:<a href="https://github.com/thanmayee-shetty/asthavyastha.github.io/blob/main/dijkstra.cpp" target="_blank">Dijkstra's Code</a>
+                <br>For the sorting algorithm I would recommend Merge Sort(ranking system):<a href="https://github.com/thanmayee-shetty/asthavyastha.github.io/blob/main/mergesort.cpp" target="_blank">Merge Sort</a>
+                <br>The graph search can be given by either depth first search or breadth first search:<a href="https://github.com/thanmayee-shetty/asthavyastha.github.io/blob/main/dfs.cpp" target="_blank">DFS</a><a href="https://github.com/thanmayee-shetty/asthavyastha.github.io/blob/main/bfs.cpp" target="_blank">BFS</a>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Farmers' Produce Distribution. All rights reserved.</p>
+    </footer>
+</body>
+</html>
