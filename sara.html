@@ -3,98 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Cases</title>
     <link rel="stylesheet" href="styleth.css">
+    <title>Business Applications</title>
 </head>
 <body>
     <header>
-        <h1>Business Cases</h1>
+        <h1>Business Applications</h1>
     </header>
     <main>
         <section>
             <h2>1. Food for Homeless and Nutrition</h2>
             <p>
-                <b>0. Indicator Information (SDG_INDICATOR_INFO)</b> <br>
-                <b>0.a. Goal (SDG_GOAL)</b> <br>
-                Goal 11: Make cities and human settlements inclusive, safe, resilient, and sustainable. <br>
-                <b>0.b. Target (SDG_TARGET)</b> Target 11.1: By 2030, make sure cities and human settlements are inclusive, safe, resilient, and sustainable. <br>
-                <b>0.c. Indicator (SDG_INDICATOR)</b> Indicator 11.1.2: Proportion of population living in slums, informal settlements, or in inadequate housing. <br>
-                <br>
-                <b>2.a. Algorithmic Applications:</b> <br>
-                <b>Food Distribution Route Optimization</b> (Dijkstra's, BFS, Heap): <br>
-                <b>Dijkstra's Algorithm:</b> To find the shortest and most efficient food delivery routes, so that resources reach the vulnerable areas with the fastest speed. <br>
-                <b>BFS:</b> For finding the shortest path in an unweighted grid (urban streets), especially for emergency deliveries. <br>
-                <b>Heap:</b> For managing priority queues in food distribution logistics, where the most urgent areas (e.g., shelters) get resources first. <br>
-                <br>
-                <b>Cost-Efficient Food Allocation</b> (Kruskal’s, Prim’s, Union-Find, Segment Tree): <br>
-                <b>Kruskal’s/Prim’s Algorithms:</b> To design cost-effective networks for food distribution, minimizing the overall transportation costs. <br>
-                <b>Union-Find:</b> To handle connected components and maintain different segments of the distribution network. <br>
-                <b>Segment Tree:</b> For fast queries and updates about the status of food distribution (for instance, the number of stocks, transport times). <br>
-                <br>
-                <b>Food Demand Forecasting</b> (Binary Search Tree, AVL Tree, Trie): <br>
-                <b>BST:</b> For fast operations of insertion and search operations on food demand data for many regions. <br>
-                <b>AVL Tree:</b> For balancing demand data to be inserted/deleted or searched quickly in terms of food requirements. <br>
-                <b>Trie:</b> For location-based food requests for storing them in terms of prefixes, and easily spotting food needs' patterns.
+                Discover more about the algorithms and methods to improve food distribution to homeless people.
             </p>
+            <a href="https://www.example.com/food_distribution">Explore Food Distribution</a>
         </section>
         <section>
             <h2>2. Drainage Systems</h2>
             <p>
-                <b>0. Indicator Information (SDG_INDICATOR_INFO)</b> <br>
-                <b>Goal (SDG_GOAL):</b> Goal 11: Make cities and human settlements inclusive, safe, resilient, and sustainable. <br>
-                <b>Target (SDG_TARGET):</b> Target 11.5: By 2030, significantly reduce the number of deaths and the number of people affected and substantially decrease the direct economic losses relative to global GDP caused by disasters, including water-related disasters. <br>
-                <b>Indicator (SDG_INDICATOR):</b> Indicator 11.5.2: Direct economic loss attributed to disasters, including water-related disasters. <br>
-                <br>
-                <b>2.a. Algorithmic Applications:</b> <br>
-                <b>Efficient Drainage Design</b> (Dijkstra's, BFS, Kruskal's, Prim's, Segment Tree): <br>
-                <b>Dijkstra's Algorithm:</b> In designing shortest paths between drainage points to ensure optimal water flow. <br>
-                <b>BFS:</b> To traverse all the possible drainage routes and ensure that all points are joined with efficiency in an urban grid. <br>
-                <b>Kruskal's/Prim's:</b> For forming the MST of drainage systems with minimum cost and covering all parts of the city. <br>
-                <b>Segment Tree:</b> Use for querying the status of a particular drainage system segment, such as water levels and flow rates in specific parts of the city. <br>
-                <br>
-                <b>Flood Prediction and Water Management</b> (Floyd-Warshall, Fenwick Tree, DFS): <br>
-                <b>Floyd-Warshall:</b> Used in determining the shortest path from many drainage nodes within a city to predict the areas which could flood. <br>
-                <b>Fenwick Tree:</b> In handling queries and updates on the water levels over drainage segments efficiently. <br>
-                <b>DFS:</b> For searching drainage networks and tracking the presence of obstructions or flaws in the water flow. <br>
-                <br>
-                <b>Resource Allocation and Management</b> (Heap, Union-Find): <br>
-                <b>Heap:</b> Areas needing immediate repair of drainage. Sorting the areas based on urgency of drainage repair. <br>
-                <b>Union-Find:</b> To determine interconnected drainage systems and their status in order to ensure timely fixing.
+                Discover more about the algorithms that assist in the design and management of drainage systems.
             </p>
+            <a href="https://www.example.com/drainage_systems">Discover Drainage Systems</a>
         </section>
         <section>
             <h2>3. Disaster Risk Management</h2>
             <p>
-                <b>0. Indicator Information (SDG_INDICATOR_INFO)</b> <br>
-                <b>Goal (SDG_GOAL):</b> Goal 11: Make cities and human settlements inclusive, safe, resilient, and sustainable. <br>
-                <b>Target (SDG_TARGET):</b> Target 11.5: By 2030, significantly reduce the number of deaths and the number of people affected and substantially decrease the direct economic losses relative to global GDP caused by disasters, including water-related disasters. <br>
-                <b>Indicator (SDG_INDICATOR):</b> Indicator 11.5.1: Number of deaths, missing persons, and directly affected persons attributed to disasters. <br>
-                <br>
-                <b>2.a. Algorithmic Applications:</b> <br>
-                <b>BFS:</b> Determine the safest evacuation route to the shortest to ensure speedy evacuation of citizens. <br>
-                <b>DFS:</b> For mapping of the evacuation network, thereby ensuring all routes are explored safely. <br>
-                <b>Heap/Priority Queue:</b> In the case of priority evacuation of the most vulnerable members. <br>
-                <br>
-                <b>Resource Distribution</b> (Dijkstra's, Kruskal's, Prim's, BFS, Union-Find): <br>
-                <b>Dijkstra's Algorithm:</b> In the process of emergency supply routing in terms of food, water, medicines, and the like toward disaster-hit regions. <br>
-                <b>Kruskal’s/Prim’s:</b> To build cost-effective resource distribution networks that minimize transportation delays. <br>
-                <b>BFS:</b> For ensuring that all affected areas are reached by emergency teams, especially in urban grids. <br>
-                <b>Union-Find:</b> For managing and connecting affected regions in the disaster response network. <br>
-                <br>
-                <b>Damage Assessment and Recovery</b> (Kruskal’s, AVL Tree, Red-Black Tree, Heap): <br>
-                <b>Kruskal’s Algorithm:</b> For finding the optimal network for damage inspection teams to efficiently cover the most affected areas. <br>
-                <b>AVL Tree/Red-Black Tree:</b> In order to manage dynamic data on infrastructure damage, with quick search and update operations. <br>
-                <b>Heap:</b> To prioritize repair teams based on the severity of damage in different parts of the city. <br>
-                <br>
-                <b>Flood Prediction</b> (Warshall's, Segment Tree, DFS): <br>
-                <b>Warshall's Algorithm:</b> To calculate potential flood paths and identify weak points in the city's drainage system. <br>
-                <b>Segment Tree:</b> In order to handle water level updates and queries efficiently over different flood-prone zones. <br>
-                <b>DFS:</b> Explore possible flood paths and areas that require urgent intervention.
+                Learn the algorithms that optimize disaster risk management, including evacuation routing and damage recovery.
             </p>
+            <a href="https://www.example.com/disaster_risk_management">Explore Disaster Risk Management</a>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Business Cases. All rights reserved.</p>
+        <p>&copy; 2024 Business Applications. All rights reserved.</p>
     </footer>
 </body>
 </html>
+
