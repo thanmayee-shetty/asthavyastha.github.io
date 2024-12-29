@@ -4,73 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleth.css">
-    <title>Drainage Systems - SDG Goal 11</title>
+    <title>Business Case 3: Disaster Risk Management</title>
 </head>
 <body>
     <header>
-        <h1>Drainage Systems - SDG Goal 11</h1>
+        <h1>Business Case 3: Disaster Risk Management</h1>
     </header>
     <main>
         <section>
             <h2>1. Indicator Information (SDG_INDICATOR_INFO)</h2>
-            <p>
-                <b>0.a. Goal (SDG_GOAL)</b> <br>
-                Goal 11: Make cities and human settlements inclusive, safe, resilient, and sustainable. <br>
-                <b>0.b. Target (SDG_TARGET)</b> <br>
-                Target 11.5: By 2030, significantly reduce the number of deaths and the number of people affected and substantially decrease the direct economic losses relative to global GDP caused by disasters, including water-related disasters. <br>
-                <b>0.c. Indicator (SDG_INDICATOR)</b> <br>
-                Indicator 11.5.2: Direct economic loss attributed to disasters, including water-related disasters.
-            </p>
+            <ul>
+                <li><strong>Goal (SDG_GOAL)</strong>: Goal 11: Make cities and human settlements inclusive, safe, resilient, and sustainable.</li>
+                <li><strong>Target (SDG_TARGET)</strong>: Target 11.5: By 2030, significantly reduce the number of deaths and the number of people affected and substantially decrease the direct economic losses relative to global GDP caused by disasters, including water-related disasters.</li>
+                <li><strong>Indicator (SDG_INDICATOR)</strong>: Indicator 11.5.1: Deaths, missing persons, and others directly affected by disasters.</li>
+            </ul>
         </section>
 
         <section>
-            <h2>2.a. Definitions and Concepts</h2>
-            <p>
-                Efficient drainage systems are crucial for managing water-related disasters in urban areas. The design and maintenance of these systems can be optimized using advanced algorithms to minimize flooding risks, ensure quick water flow, and reduce economic losses. Below are the algorithmic applications that can be used for achieving this goal:
-            </p>
-        </section>
+            <h2>2.a. Algorithmic Implementations</h2>
 
-        <section>
-            <h2>2.b. Algorithmic Applications</h2>
-            <h3>Efficient Drainage Design</h3>
-            <p>
-                Algorithms like Dijkstra's, BFS, Kruskal's, and Prim's help optimize the layout and operation of drainage systems:
-                <ul>
-                    <li><b>Dijkstra's Algorithm:</b> Used to find the shortest paths between drainage points for optimal water flow. <br>
-                        <a href="https://github.com/thanmayee-shetty/asthavyastha.github.io/blob/main/dijkstra.cpp" target="_blank">Dijkstra's Algorithm Code</a>
-                    </li>
-                    <li><b>BFS:</b> Ensures efficient connectivity of all drainage points in urban grids. <br>
-                        <a href="https://github.com/thanmayee-shetty/asthavyastha.github.io/blob/main/bfs.cpp" target="_blank">BFS Code</a>
-                    </li>
-                    <li><b>Kruskal's/Prim's Algorithm:</b> Helps build a minimum spanning tree for drainage networks, reducing construction costs. <br>
-                        <a href="https://github.com/thanmayee-shetty/asthavyastha.github.io/blob/main/kruskal.cpp" target="_blank">Kruskal's Algorithm Code</a>
-                    </li>
-                    <li><b>Segment Tree:</b> Monitors water levels and flow rates in different segments of the drainage system. <br>
-                        <a href="https://github.com/thanmayee-shetty/asthavyastha.github.io/blob/main/segmenttree.cpp" target="_blank">Segment Tree Code</a>
-                    </li>
-                </ul>
-            </p>
-            <h3>Flood Forecasting and Resource Allocation</h3>
-            <p>
-                <ul>
-                    <li><b>Floyd-Warshall Algorithm:</b> Computes shortest paths from multiple drain nodes for flood prediction. <br>
-                        <a href="https://github.com/thanmayee-shetty/asthavyastha.github.io/blob/main/floydwarshall.cpp" target="_blank">Floyd-Warshall Code</a>
-                    </li>
-                    <li><b>Fenwick Tree:</b> Handles water level queries and updates efficiently. <br>
-                        <a href="https://github.com/thanmayee-shetty/asthavyastha.github.io/blob/main/fenwicktree.cpp" target="_blank">Fenwick Tree Code</a>
-                    </li>
-                    <li><b>DFS:</b> Explores drainage networks to trace blockages or obstructions. <br>
-                        <a href="https://github.com/thanmayee-shetty/asthavyastha.github.io/blob/main/dfs.cpp" target="_blank">DFS Code</a>
-                    </li>
-                    <li><b>Heap:</b> Prioritizes areas requiring urgent drainage repairs. <br>
-                        <a href="https://github.com/thanmayee-shetty/asthavyastha.github.io/blob/main/heap.cpp" target="_blank">Heap Code</a>
-                    </li>
-                </ul>
-            </p>
+            <h3>Evacuation and Resource Allocation (BFS, DFS, Heap, Priority Queue)</h3>
+            <ol>
+                <li><strong>BFS (Breadth-First Search)</strong>: 
+                    <ul>
+                        <li><strong>Purpose</strong>: To determine the safest shortest evacuation routes and guarantee to get there as quickly as possible.</li>
+                        <li><strong>Efficiency</strong>: O(V + E)</li>
+                        <li><strong>Example Code</strong>: <a href="[BFS Code URL]" target="_blank">BFS Code</a></li>
+                    </ul>
+                </li>
+
+                <li><strong>DFS (Depth-First Search)</strong>: 
+                    <ul>
+                        <li><strong>Purpose</strong>: To explore all evacuation routes and map the safest route in disaster-hit areas.</li>
+                        <li><strong>Efficiency</strong>: O(V + E)</li>
+                        <li><strong>Sample Code</strong>: <a href="[DFS Code URL]" target="_blank">DFS Code</a></li>
+                    </ul>
+                </li>
+
+                <li><strong>Heap/Priority Queue</strong>: 
+                    <ul>
+                        <li><strong>Purpose</strong>: To prioritize evacuation or aid distribution based on vulnerability and urgency.</li>
+                        <li><strong>Efficiency</strong>: O(log n)</li>
+                        <li><strong>Sample Code</strong>: <a href="[Heap/Priority Queue Code URL]" target="_blank">Heap/Priority Queue Code</a></li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h3>Resource Distribution (Dijkstra's, Kruskal's, Prim's, BFS, Union-Find)</h3>
+            <ol>
+                <li><strong>Dijkstra's Algorithm</strong>: 
+                    <ul>
+                        <li><strong>Purpose</strong>: To effectively route supplies for disaster-relief supplies to disaster-hit areas as soon as possible.</li>
+                        <li><strong>Efficiency</strong>: O(|E| log |V|)</li>
+                        <li><strong>Sample Code</strong>: <a href="[Dijkstra's Algorithm URL]" target="_blank">Dijkstra's Algorithm</a></li>
+                    </ul>
+                </li>
+
+                <li><strong>Kruskal's/Prim's Algorithms</strong>: 
+                    <ul>
+                        <li><strong>Purpose</strong>: For building cost-efficient networks by reducing transportation time in any disaster relief area.</li>
+                        <li><strong>Efficiency</strong>: Prim's: O(E log V), Kruskal's: O(E log E)</li>
+                        <li><strong>Sample Code</strong>: <a href="[Kruskal's/Prim's Code URL]" target="_blank">Kruskal's/Prim's Code</a></li>
+                    </ul>
+                </li>
+
+                <li><strong>BFS</strong>: 
+                    <ul>
+                        <li><strong>Purpose</strong>: To cover all damage areas within the shortest possible time so that emergency teams can gain access to affected areas inside the urban grids.</li>
+                        <li><strong>Efficiency</strong>: O(V + E)</li>
+                        <li><strong>Sample Code</strong>: <a href="[BFS Code URL]" target="_blank">BFS Code</a></li>
+                    </ul>
+                </li>
+
+                <li><strong>Union-Find</strong>: 
+                    <ul>
+                        <li><strong>Purpose</strong>: To connect and handle disaster-ridden areas inside the disaster response network.</li>
+                        <li><strong>Efficiency</strong>: O(α(n))</li>
+                        <li><strong>Sample Code</strong>: <a href="[Union-Find Code URL]" target="_blank">Union-Find Code</a></li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h3>Damage Assessment and Recovery (Kruskal's, AVL Tree, Red-Black Tree, Heap)</h3>
+            <ol>
+                <li><strong>Kruskal's Algorithm</strong>: 
+                    <ul>
+                        <li><strong>Purpose</strong>: To optimize the network for damage inspection teams to cover the maximum affected area.</li>
+                        <li><strong>Efficiency</strong>: O(E log E)</li>
+                        <li><strong>Sample Code</strong>: <a href="[Kruskal's Algorithm Code URL]" target="_blank">Kruskal's Algorithm Code</a></li>
+                    </ul>
+                </li>
+
+                <li><strong>AVL Tree/Red-Black Tree</strong>: 
+                    <ul>
+                        <li><strong>Purpose</strong>: To maintain dynamic data on damage with fast search and update operations.</li>
+                        <li><strong>Efficiency</strong>: O(log n)</li>
+                        <li><strong>Sample Code</strong>: <a href="[AVL/Red-Black Tree Code URL]" target="_blank">AVL/Red-Black Tree Code</a></li>
+                    </ul>
+                </li>
+
+                <li><strong>Heap</strong>: 
+                    <ul>
+                        <li><strong>Purpose</strong>: To prioritize repair teams based on the severity of damage.</li>
+                        <li><strong>Efficiency</strong>: O(log n)</li>
+                        <li><strong>Sample Code</strong>: <a href="[Heap Code URL]" target="_blank">Heap Code</a></li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h3>Flood Prediction (Warshall's, Segment Tree, DFS)</h3>
+            <ol>
+                <li><strong>Warshall's Algorithm</strong>: 
+                    <ul>
+                        <li><strong>Purpose</strong>: To identify flood-prone areas by calculating potential flood paths.</li>
+                        <li><strong>Efficiency</strong>: O(n^3)</li>
+                        <li><strong>Sample Code</strong>: <a href="[Warshall's Algorithm Code URL]" target="_blank">Warshall's Algorithm Code</a></li>
+                    </ul>
+                </li>
+
+                <li><strong>Segment Tree</strong>: 
+                    <ul>
+                        <li><strong>Purpose</strong>: For efficient updates and queries of water levels in flood-prone zones.</li>
+                        <li><strong>Efficiency</strong>: O(log n)</li>
+                        <li><strong>Sample Code</strong>: <a href="[Segment Tree Code URL]" target="_blank">Segment Tree Code</a></li>
+                    </ul>
+                </li>
+
+                <li><strong>DFS</strong>: 
+                    <ul>
+                        <li><strong>Purpose</strong>: To explore potential flood paths and identify areas requiring immediate intervention.</li>
+                        <li><strong>Efficiency</strong>: O(V + E)</li>
+                        <li><strong>Example Code</strong>: <a href="[DFS Code URL]" target="_blank">DFS Code</a></li>
+                    </ul>
+                </li>
+            </ol>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Drainage Systems. All rights reserved.</p>
+        <p>&copy; 2024 Disaster Risk Management. All rights reserved.</p>
     </footer>
 </body>
 </html>
