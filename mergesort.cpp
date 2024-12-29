@@ -1,87 +1,71 @@
-#include<bits/stdc++.h>
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <vector>
+#include <algorithm>
+#include <map>
 using namespace std;
-int a[10];
-int p=10;
-class msort
-{
-    public:
-        int merge(int a[],int p);
-        int mergesort(int b[],int c[],int a[],int p,int q);
-        void display();
+
+struct Produce {
+    string name;
+    int quantity;
+    bool operator<(const Produce &other) const {
+        return quantity > other.quantity;
+    }
 };
-int msort::merge(int a[],int p)
-{
-    if(p<=1)
-    {
-        return 0;
-    }
-    int q=p/2;
-    int b[q],c[p-q];
-    for(int i=0;i<q;i++)
-    {
-        b[i]=a[i];
-    }
-    for(int i=q;i<p;i++)
-    {
-        c[i-q]=a[i];
-    }
-    merge(b,q);
-    merge(c,p-q);
-    mergesort(b,c,a,q,p-q);
-}
-int msort::mergesort(int b[],int c[],int a[],int p,int q)
-{
-    int i=0,j=0,k=0;
-    while(i<p&&j<q)
-    {
-        if(b[i]<=c[j])
-        {
-            a[k]=b[i];
-            i++;
-        }
-        else
-        {
-            a[k]=c[j];
-            j++;
-        }
-        k++;
-    }
-    if(i==p)
-    {
-        while(j<q)
-        {
-            a[k]=c[j];
-            j++;
-            k++;
+
+class Farmer {
+public:
+    map<string, vector<Produce>> farmerData;
+
+    void readFile(const string &filename) {
+        ifstream file(filename);
+        string line;
+        while (getline(file, line)) {
+            stringstream ss(line);
+            string farmerName;
+            ss >> farmerName;
+
+            string produceName;
+            int quantity;
+            vector<Produce> produceList;
+            while (ss >> produceName) {
+                ss.ignore(1);
+                ss >> quantity;
+                ss.ignore(1);
+
+                Produce p = {produceName, quantity};
+                produceList.push_back(p);
+            }
+
+            farmerData[farmerName] = produceList;
         }
     }
-    else
-    {
-        while(i<p)
-        {
-            a[k]=b[i];
-            i++;
-            k++;
+
+    void displaySortedProduce(const string &farmerName) {
+        if (farmerData.find(farmerName) != farmerData.end()) {
+            cout << "Farmer: " << farmerName << endl;
+            vector<Produce> produceList = farmerData[farmerName];
+            sort(produceList.begin(), produceList.end());
+
+            for (const auto &produce : produceList) {
+                cout << produce.name << " (" << produce.quantity << ")\n";
+            }
+        } else {
+            cout << "Farmer not found!" << endl;
         }
     }
-}
-void msort::display()
-{
-    cout<<"sorted array:\n";
-    for(int i=0;i<10;i++)
-    {
-        cout<<i<<":  "<<a[i]<<endl;
-    }
-}
-int main()
-{
-    msort s;
-    cout<<"Enter array elements:\n";
-    for(int i=0;i<10;i++)
-    {
-        cout<<i<<":\t";
-        cin>>a[i];
-    }
-    s.merge(a,p);
-    s.display();
+};
+
+int main() {
+    Farmer farmer;
+    farmer.readFile("farmer.txt");
+
+    string farmerName;
+    cout << "Enter the farmer's name: ";
+    getline(cin, farmerName);
+
+    farmer.displaySortedProduce(farmerName);
+
+    return 0;
 }
