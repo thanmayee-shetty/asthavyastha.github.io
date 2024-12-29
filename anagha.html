@@ -1,86 +1,175 @@
 <!DOCTYPE html>
-<!-- saved from url=(0034)file:///C:/Users/anagh/Anagha.HTML -->
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Business Cases</title>
-        <link rel="stylesheet" href="styleth.css">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Cases</title>
+    <link rel="stylesheet" href="styleth.css">
+</head>
 <body>
+    <header>
+        <h1>Business Cases</h1>
+    </header>
+    <main>
+        <section>
+            <h2>1. Healthcare and Development</h2>
+            <p>
+                <strong>0. Indicator information (SDG_INDICATOR_INFO)</strong> <br>
+                <strong>0.a. Goal (SDG_GOAL)</strong> <br>
+                Goal 11: Make cities and human settlements inclusive, safe, resilient, and sustainable. <br>
+                <strong>0.b. Target (SDG_TARGET) Target 11.5:</strong> By 2030, significantly reduce the number of deaths and the number of people affected, and substantially decrease the direct economic losses relative to global gross domestic product caused by disasters, including water-related disasters, with a focus on protecting the poor and people in vulnerable situations. <br>
+                <strong>0.c. Indicator (SDG_INDICATOR) Indicator 11.7.1:</strong> Number of deaths, missing persons, and directly affected persons attributed to disasters per 100,000 population. <br>
+                <br>
+                <strong>2.a. More About the case</strong> <br>
+                The indicator related to the number of deaths, missing persons, and directly affected persons attributed to disasters per 100,000 population plays a key role in measuring a city's resilience to disasters. Specifically, this indicator helps track the vulnerability of populations to natural and man-made disasters (such as earthquakes, floods, hurricanes, and other environmental or technological hazards). It emphasizes the importance of disaster risk reduction and the need to build resilience, which is a critical component of SDG 11.<br><br>
+                <br>
+                Here, the main focus is to give importance to both rural and urban communities in the areas of hospitals, clinics, and emergency services. My case, in particular, is about ensuring that healthcare services are accessible, affordable, and of high quality for all individuals, especially those in underserved or marginalized communities. This development also addresses the need for emergency care services and medical advancements in a way that they can cater to a wide range of medical needs.
+                <br> <ul>
+                    <li><strong>Real-Time Patient Monitoring:</strong>
+                        <ul>
+                            <li>Monitor patient vitals such as heart rate, blood pressure, and oxygen levels using IoT devices.</li>
+                            <li>Collect vitals periodically and maintain a sorted list of patients based on the severity of their condition.</li>
+                            <li>Use sorting to continuously rank patients' conditions, ensuring that those with critical vitals are highlighted for paramedics.</li>
+                            <li><em>Algorithm:</em> Insertion Sort</li>
+                        </ul>
+                    </li>
+                    <li><strong>Dynamic Routing Algorithms:</strong>
+                        <ul>
+                            <li>Identify the current location of the ambulance and the patient.</li>
+                            <li>Use real-time traffic data to calculate the most efficient route.</li>
+                            <li>Continuously update the route based on changing traffic conditions.</li>
+                            <li><em>Algorithm:</em> Dijkstra's Algorithm or A* Search Algorithm</li>
+                        </ul>
+                    </li>
+                    <li><strong>AI-Based Triage System:</strong>
+                        <ul>
+                            <li>Collect patient symptoms and vital signs such as oxygen levels and heart rate.</li>
+                            <li>Assign a priority score based on the severity of the data.</li>
+                            <li>Sort patients in order of urgency for treatment.</li>
+                            <li><em>Algorithm:</em> Quick Sort</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </p>
+        </section>
 
-    <header>Business Cases and Implementation Plans</header>
+        <section>
+            <h2>2. Sustainable Infrastructure Development(Green buildings and Transport)</h2>
+            <p>
+                <p>This particular business case links to three sub-targets of SDG 11: Sustainable Cities and Communities:</p>
+                <ul>
+                  <li>
+                    <strong>Target 11.2: Sustainable Transport</strong>
+                    <p>Provide access to safe, affordable, accessible and sustainable transport systems for all, improving road safety, notably by expanding public transport, with special attention to the needs of those in vulnerable situations, women, children, persons with disabilities and older persons.</p>
+                  </li>
+                  <li>
+                    <strong>Target 11.6: Reducing Environmental Impact</strong>
+                    <p>Reduce the adverse per capita environmental impact of cities, including by paying special attention to air quality and municipal and other waste management.</p>
+                  </li>
+                  <li>
+                    <strong>Target 11.7: Green and Public Spaces</strong>
+                    <p>Provide universal access to safe, inclusive and accessible, green and public spaces, in particular for women and children, older persons and persons with disabilities.</p>
+                  </li>
+                </ul> <br>
+                <br>
+                This project helps make cities better places to live by focusing on making them more sustainable, which is what the UN's Sustainable Development Goal 11 (SDG 11) is all about. We're looking at things like public transportation, garbage collection, and parks, and using smart computer programs to make them work better. This helps reduce pollution, makes getting around easier, and gives everyone access to green spaces<br>
+                <br>
+                <strong>2.a. More About the Case</strong> <br>
+                <p>These are the ways in which my business case can be implemented by the techniques of Algorithms:</p>
+                <ul>
+                  <li>
+                    <strong>Prioritizing Public Transport Routes (Target 11.2):</strong> We can Use <em>Bubble Sort</em> (or Insertion Sort) to rank public transport routes based on a combined score of ridership, connectivity, and accessibility, prioritizing the highest-scoring routes.
+                  </li>
+                  <li>
+                    <strong>Optimizing Waste Collection Routes (Target 11.6):</strong> Use a simplified approach with a <em>Greedy Algorithm</em> (similar in concept to Selection Sort) to iteratively choose the nearest unvisited waste collection point, creating a relatively efficient route.
+                  </li>
+                  <li>
+                    <strong>Allocating Green Spaces (Target 11.7):</strong> Use <em>Insertion Sort</em> to arrange city districts by population density and then allocate green space proportionally, starting with the most densely populated areas.
+                  
 
-    <!-- Healthcare Development -->
+<br>
+<br>
+
+<ul>
     <section>
-        <h2>1. Healthcare Development</h2>
-        <p><strong>SDGs Mapped:</strong></p>
-        <ul>
-            <li><b>SDG 3 (Good Health and Well-being)</b></li>
-            <li><b>SDG 10 (Reduced Inequality)</b></li>
-            <li><b>SDG 11 (Sustainable Cities and Communities)</b></li>
-        </ul>
-        <p><strong>Business Case:</strong> Healthcare development focuses on improving hospitals, clinics, and emergency services to make healthcare accessible to more people. It ensures that healthcare facilities are modernized and reach underserved communities, helping them get better medical attention when needed.</p>
-        
-        <p><strong>Plan for Implementation:</strong></p>
-        <ul>
-            <li><strong>Dijkstra’s Algorithm:</strong> Used to find the fastest route for ambulances to reach emergency locations.</li>
-            <li><strong>Heap Sort:</strong> Helps prioritize the construction of hospitals in areas with high demand based on population and current healthcare services.</li>
-        </ul>
-        <p><strong>How?</strong></p>
-        <ol>
-            <li>Step 1: Collect data on population density and existing healthcare facilities.</li>
-            <li>Step 2: Use the data to optimize ambulance routes and allocate resources effectively.</li>
-        </ol>
-    </section>
+        <h2>2.Enhancing Urban Tourism  </h2>
+    </li>
+    <p>Sustainable tourism plays a crucial role in achieving SDG 11: Sustainable Cities and Communities, which aims to make cities inclusive, safe, resilient, and sustainable. This business case, "Enhancing Urban Tourism Sustainability through Community Engagement," focuses on maximizing the positive impacts of tourism while minimizing its negative effects on urban environments and local communities. It directly addresses several sub-targets of SDG 11, including:</p>
     
+    <li>
+        <strong>Target 11.4: Protect the world’s cultural and natural heritage:</strong> Sustainable tourism can generate revenue for the preservation and restoration of cultural heritage sites and natural attractions within cities.
+    </li>
 
-    <!-- Sustainable Infrastructure Development -->
-    <section>
-        <h2>2. Sustainable Infrastructure Development (Green Buildings and Transport)</h2>
-        <p><strong>SDGs Mapped:</strong></p>
-        <ul>
-            <li><b>SDG 7 (Affordable and Clean Energy)</b></li>
-            <li><b>SDG 9 (Industry, Innovation, and Infrastructure)</b></li>
-            <li><b>SDG 11 (Sustainable Cities and Communities)</b></li>
-            <li><b>SDG 13 (Climate Action)</b></li>
-        </ul>
-        <p><strong>Business Case:</strong> Sustainable infrastructure focuses on creating energy-efficient buildings and greener transportation systems. This helps reduce carbon emissions and supports a cleaner, more livable environment. By incorporating renewable energy sources and smart transport solutions, we can make cities more sustainable and reduce pollution.</p>
-        
-        <p><strong>Plan for Implementation:</strong></p>
-        <ul>
-            <li><strong>QuickSort:</strong> Used to organize building materials based on cost, energy efficiency, and environmental impact.</li>
-            <li><strong>Kruskal’s Algorithm:</strong> Helps design the most efficient public transport routes to minimize emissions and optimize resources.</li>
-        </ul>
-        <p><strong>How?</strong></p>
-        <ol>
-            <li>Step 1: Collect data on traffic patterns and energy usage for buildings.</li>
-            <li>Step 2: Use algorithms to prioritize areas for new green buildings and optimize transport routes.</li>
-        </ol>
-    </section>
-    
+    <br>
 
-    <!-- Electricity Distribution -->
-    <section>
-        <h2>3. Electricity Distribution</h2>
-        <p><strong>SDGs Mapped:</strong></p>
-        <ul>
-            <li>SDG 7 (Affordable and Clean Energy)</li>
-            <li>SDG 9 (Industry, Innovation, and Infrastructure)</li>
-            <li>SDG 13 (Climate Action)</li>
-        </ul>
-        <p><strong>Business Case:</strong> Optimizing electricity distribution ensures that energy reaches everyone efficiently, with minimal losses. By integrating renewable energy sources like wind and solar, we can make electricity distribution more sustainable and reduce dependence on fossil fuels.</p>
-        
-        <p><strong>Plan for Implementation:</strong></p>
-        <ul>
-            <li><strong>Bellman-Ford Algorithm:</strong> Used to find the most cost-effective way to lay out power lines from power plants to homes and businesses.</li>
-            <li><strong>Kruskal’s Algorithm:</strong> Helps build a minimal spanning tree for the power grid, ensuring it is cost-effective while connecting all necessary points.</li>
-        </ul>
-        <p><strong>How?</strong></p>
-        <ol>
-            <li>Step 1: Identify the locations of power plants and areas with high energy demand.</li>
-            <li>Step 2: Use algorithms to optimize the power distribution network and reduce losses.</li>
-        </ol>
-    </section>
-    
+    <li>
+        <strong>Target 11.a: Support positive economic, social and environmental links between urban, peri-urban and rural areas by strengthening national and regional planning:</strong> Tourism can create economic opportunities for local businesses and communities, fostering connections between urban and surrounding areas.
+    </li>
+
+    <br>
+
+    <li>
+        <strong>Target 11.b: By 2020, substantially increase the number of cities and human settlements adopting and implementing integrated policies and plans towards inclusion, resource efficiency, mitigation and adaptation to climate change, resilience to disasters, develop and implement, in line with the Sendai Framework for Disaster Risk Reduction 2015-2030, holistic disaster risk management at all levels:</strong> Sustainable tourism practices can contribute to resource efficiency, climate change mitigation, and disaster resilience in urban destinations.
+    </li>
+</ul>
+
+<br>
+<br>
+
+<p>The business case centers on engaging local communities in tourism planning and development. By empowering residents to participate in tourism-related activities and benefit directly from tourism revenue, we can create a more equitable and sustainable tourism model. This includes promoting locally owned businesses, supporting cultural preservation initiatives led by communities, and developing tourism experiences that showcase local traditions and heritage. This approach not only enhances the visitor experience but also ensures that tourism benefits the community as a whole, contributing to more inclusive and sustainable urban development.</p>
+
+
+<br><br>
+
+<ul>
+    <li>
+        <strong>Target 11.4: Protect the world’s cultural and natural heritage:</strong> Sustainable tourism can generate revenue for the preservation and restoration of cultural heritage sites and natural attractions within cities.
+    </li>
+
+    <br>
+
+    <li>
+        <strong>Target 11.a: Support positive economic, social and environmental links between urban, peri-urban and rural areas by strengthening national and regional planning:</strong> Tourism can create economic opportunities for local businesses and communities, fostering connections between urban and surrounding areas.
+    </li>
+
+    <br>
+
+    <li>
+        <strong>Target 11.b: By 2020, substantially increase the number of cities and human settlements adopting and implementing integrated policies and plans towards inclusion, resource efficiency, mitigation and adaptation to climate change, resilience to disasters, develop and implement, in line with the Sendai Framework for Disaster Risk Reduction 2015-2030, holistic disaster risk management at all levels:</strong> Sustainable tourism practices can contribute to resource efficiency, climate change mitigation, and disaster resilience in urban destinations.
+    </li>
+</ul>
+
+<br><br>
+
+<p>The business case centers on engaging local communities in tourism planning and development. By empowering residents to participate in tourism-related activities and benefit directly from tourism revenue, we can create a more equitable and sustainable tourism model. This includes promoting locally owned businesses, supporting cultural preservation initiatives led by communities, and developing tourism experiences that showcase local traditions and heritage. This approach not only enhances the visitor experience but also ensures that tourism benefits the community as a whole, contributing to more inclusive and sustainable urban development.</p>
+
+<p>Here are three innovative ways we can implement this using algorithms and sorting techniques:</p>
+
+<ul>
+    <li>
+        <strong>Optimizing Tourist Routes for Minimal Environmental Impact (using Dijkstra's Algorithm):</strong> Imagine a map of the city as a graph, with tourist attractions as nodes and roads as edges. We can assign "weights" to each road based on factors like traffic congestion, air pollution levels, and proximity to sensitive ecosystems. Then, using <em>Dijkstra's Algorithm</em>, we can find the shortest paths between attractions that minimize environmental impact, guiding tourists along routes that are less congested and less polluting.
+    </li>
+
+    <br>
+
+    <li>
+        <strong>Matching Tourists with Local Experiences Based on Preferences (using Trie Data Structure and Sorting):</strong> We can create a database of local experiences offered by community members, like cooking classes, historical tours, or craft workshops. Using a <em>Trie data structure</em>, we can efficiently store and search these experiences based on keywords and categories. Then, using a sorting algorithm like <em>Merge Sort</em> or <em>Quick Sort</em>, we can rank these experiences based on tourist preferences gathered through surveys or online profiles, effectively matching tourists with the most relevant and appealing local experiences.
+    </li>
+
+    <br>
+
+    <li>
+        <strong>Prioritizing Local Businesses for Tourism Promotion (using Weighted Sorting):</strong> We can create a scoring system for local businesses based on factors like local ownership, use of sustainable practices, and community involvement. Then, using <em>Weighted Sorting</em> (similar to how we prioritize public transport in the previous example), we can rank these businesses based on their scores. This allows us to prioritize promoting businesses that contribute most positively to the local community and sustainable tourism.
+    </li>
+</ul>  
+</ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Business Cases. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+
